@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+
+<!-- Header -->
+{% block header %}
+	<header id="header">
+		<span class="avatar-mini"><img src="{{ url_for('static', filename='img/avatar.png') }}" alt="" /></span>
+	</header>
+<span class="custom-br"></span>
+{% endblock %}
+
+<!-- Main -->
+{% block main %}
+	<section id="main">
+		<div class="contact_info">
+			<h1>Official website of the biker club Podorozhnyky</h1>
+			<p>The goal of the club is to unite like-minded people, no matter what bikes they ride,
+				as well as to maintain a healthy lifestyle. In our club, everyone is on the same level - all bikers, all people - even despite the division of powers.
+				We ride motorcycles not from idleness, we ride motorcycles after work - in the evening and at night! This is our lifestyle!</p>
+			<h2>Location: Ukraine, Valki</h2>
+			<div class="google_map">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20585.841019625175!2d35.59663547656598!3d49.83813335323688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127891149694813%3A0xeca911abf34df261!2z0JLQsNC70LrQuCwg0KXQsNGA0YzQutC-0LLRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwgNjMwMDA!5e0!3m2!1sru!2sua!4v1686047489030!5m2!1sru!2sua"></iframe>
+			</div>
+
+		<div class="contact_data">
+			<div class="contact_container">
+				<i class="fa fa-phone" aria-hidden="true"></i>
+				<p>President: (415) 124-5678</p>
+				<p>Vice president: (412) 123-8290</p>
+			</div>
+			<div class="contact_container">
+				<i class="fa fa-map-marker"></i>
+				<p>1001 Brickell Bay Dr.</p>
+				<p>Suite 1900 </p>
+				<p>Miami, FL 33131</p>
+			</div>
+			<div class="contact_container">
+				<a href="#">
+					<i class="fa fa-envelope-o"></i>
+					<p>user@mail.com</p>
+				</a>
+			</div>
+			<div class="contact_container">
+				<a href="#">
+					<i class="fa fa-facebook"></i>
+					<p>Facebook</p>
+				</a>
+			</div>
+		</div>
+
+		</div>
+	</section>
+
+{% endblock %}
+
+
+				

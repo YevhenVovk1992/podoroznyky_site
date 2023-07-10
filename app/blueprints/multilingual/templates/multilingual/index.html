@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+
+<!-- Header -->
+{% block header %}
+	<header id="header">
+		<span class="avatar"><img src="{{ url_for('static', filename='img/avatar.png') }}" alt="" /></span>
+		<h1>At least apply to the wound...</h1>
+		<ul class="icons">
+			<li><a href="#" class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li>
+			<li><a href="#" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
+			<li><a href="#" class="icon style2 fa-instagram"><span class="label">Instagram</span></a></li>
+			<li><a href="#" class="icon style2 fa-500px"><span class="label">500px</span></a></li>
+			<li><a href="#" class="icon style2 fa-envelope-o"><span class="label">Email</span></a></li>
+		</ul>
+	</header>
+{% endblock %}
+
+
+<!-- Main -->
+{% block main %}
+	<section id="main">
+		<div class="play_video">
+			<iframe src="https://www.youtube.com/embed/k472kA4Mi04?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+		</div>
+	</section>
+{% endblock %}
+
