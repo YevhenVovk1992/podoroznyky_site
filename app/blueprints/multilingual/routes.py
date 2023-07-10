@@ -8,7 +8,6 @@ multilingual = Blueprint('multilingual', __name__, template_folder='templates')
 
 @multilingual.route('/')
 @multilingual.route('/index')
-# @app.route('/', methods=['GET', ])
 def index():
     """
     The function renders start page.
@@ -16,7 +15,7 @@ def index():
     return render_template('multilingual/index.html', title='Home')
 
 
-# @app.route('/contacts/', methods=['GET', ])
+
 @multilingual.route('/contacts/')
 def contact_view():
     """
@@ -25,7 +24,7 @@ def contact_view():
     return render_template('multilingual/contact.html', title='Contacts')
 
 
-# @app.route('/photo/', methods=['GET', ])
+
 @multilingual.route('/photo/')
 def photo_view():
     """
