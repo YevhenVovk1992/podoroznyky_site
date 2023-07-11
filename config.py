@@ -11,7 +11,6 @@ dotenv.load_dotenv(dotenv_path)
 
 class BaseConfig:
     SECRET_KEY = os.environ.get('SECRET_KEY') or 'A SECRET KEY'
-    BABEL_DEFAULT_LOCALE = 'uk'
     LANGUAGES = ['en', 'uk']
 
 

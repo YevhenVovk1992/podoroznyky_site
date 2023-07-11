@@ -1,6 +1,6 @@
 import os
 
-from flask import Flask, request, g
+from flask import Flask, request, g, redirect, url_for
 from flask_babel import Babel
 
 import config
@@ -23,3 +23,9 @@ def get_locale():
 
 babel = Babel(app)
 babel.init_app(app, locale_selector=get_locale)
+
+
+@app.route('/')
+def home():
+    g.lang_code = request.accept_languages.best_match(app.config['LANGUAGES'])
+    return redirect(url_for('multilingual.index'))
