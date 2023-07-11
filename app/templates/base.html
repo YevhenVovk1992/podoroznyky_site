@@ -16,15 +16,12 @@
 					<a href="{{ url_for('multilingual.index') }}">{{_('Main')}}</a>
 					<a href="{{ url_for('multilingual.photo_view') }}">{{_('Photos')}}</a>
 					<a href="{{ url_for('multilingual.contact_view') }}">{{_('Contacts')}}</a>
-					<a href="#">{{_('Language:')}}
-						<select id="land" name="user_profile_color_1">
-						  <option value="1">{{_('English')}}</option>
-						  <option value="2">{{_('Ukraine')}}</option>
-						</select>
-					</a>
 				</nav>
-
-
+				<nav>
+					<a href="#">{{_('Language:')}}</a>
+					<a href="{{ url_for(request.endpoint, lang_code='en') }}">{{_('English')}}</a>
+					<a href="{{ url_for(request.endpoint, lang_code='uk') }}">{{_('Ukraine')}}</a>
+				</nav>
 
 				<!-- Header -->
                  {% block header %}

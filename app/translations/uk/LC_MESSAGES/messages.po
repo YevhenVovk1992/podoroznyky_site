@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2023-07-11 13:17+0300\n"
-"PO-Revision-Date: 2023-07-11 13:17+0300\n"
+"POT-Creation-Date: 2023-07-11 17:10+0300\n"
+"PO-Revision-Date: 2023-07-11 17:11+0300\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: uk\n"
 "Language-Team: uk <LL@li.org>\n"
@@ -19,63 +19,61 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.12.1\n"
 
-#: app/blueprints/multilingual/templates/multilingual/404.html:13
-msgid "Page Not Found"
-msgstr "Сторінку не знайдено"
-
-#: app/blueprints/multilingual/templates/multilingual/500.html:11
+#: app/blueprints/multilingual/templates/multilingual/500.html:18
 msgid "An unexpected error has occurred"
 msgstr "Сталася неочікувана помилка"
 
-#: app/blueprints/multilingual/templates/multilingual/500.html:12
+#: app/blueprints/multilingual/templates/multilingual/500.html:19
 msgid "The administrator has been notified. Sorry for the inconvenience!"
 msgstr "Адміністратора повідомлено. Вибачте за незручності!"
 
 #: app/blueprints/multilingual/templates/multilingual/contact.html:15
 #: app/blueprints/multilingual/templates/multilingual/photos.html:17
 msgid "Official website of the biker club Podorozhnyky"
-msgstr "Офіційний вебсайт байк клубу Подорожники"
+msgstr "Офіційний веб сайт байк клуба Подорожники"
 
 #: app/blueprints/multilingual/templates/multilingual/contact.html:16
 msgid ""
 "The goal of the club is to unite like-minded people, no matter what bikes"
-" they ride,\n"
-"\t\t\t\tas well as to maintain a healthy lifestyle. In our club, everyone"
-" is on the same level - all bikers, all people - even despite the "
-"division of powers.\n"
-"\t\t\t\tWe ride motorcycles not from idleness, we ride motorcycles after "
-"work - in the evening and at night! This is our lifestyle!"
+" they ride, as well as to maintain a healthy lifestyle. In our club, "
+"everyone is on the same level - all bikers, all people - even despite the"
+" division of powers. We ride motorcycles not from idleness, we ride "
+"motorcycles after work - in the evening and at night! This is our "
+"lifestyle!"
 msgstr "Мета клубу - об'єднати однодумців, не дивлячись на яких мотоциклах"
-"вони їздять,\n"
-"\t\t\t\а також вести здоровий спосіб життя. У нашому клубі всі"
-" знаходиться на одному рівні - всі байкери, всі люди - навіть, незважаючи на "
-"розподіл влади.\n"
-\t\t\t\tМи їздимо на мотоциклах не з безділля, ми їздимо на мотоциклах після»
-"Робота - ввечері і вночі! Це наш стиль життя!"
+" катаються, а також пропаганда здорового способу життя. У нашому клубі "
+"усі на одному рівні - всі байкери, всі люди - навіть незважаючи на"
+«Розподіл влади. Ми їздимо на мотоциклах не з бездіяльності, ми їздимо»
+"мотоцикли після роботи - ввечері та вночі! Це наш"
+"спосіб життя!""
 
-#: app/blueprints/multilingual/templates/multilingual/contact.html:19
+#: app/blueprints/multilingual/templates/multilingual/contact.html:17
 msgid "Location: Ukraine, Valki"
-msgstr "Розташування: Україна, Валки"
+msgstr "Місцезнаходження: Україна, м. Валки"
 
-#: app/blueprints/multilingual/templates/multilingual/contact.html:27
+#: app/blueprints/multilingual/templates/multilingual/contact.html:25
 msgid "President: "
 msgstr "Президент: "
 
-#: app/blueprints/multilingual/templates/multilingual/contact.html:28
+#: app/blueprints/multilingual/templates/multilingual/contact.html:26
 msgid "Vice president: "
 msgstr "Віце президент: "
 
-#: app/blueprints/multilingual/templates/multilingual/contact.html:32
+#: app/blueprints/multilingual/templates/multilingual/contact.html:30
 msgid "1001 Brickell Bay Dr."
-msgstr "1001 Брайкел Бей"
+msgstr "1001 Бриккі Бей"
 
-#: app/blueprints/multilingual/templates/multilingual/contact.html:33
+#: app/blueprints/multilingual/templates/multilingual/contact.html:31
 msgid "Suite 1900"
-msgstr "Сюти 1900"
+msgstr "Сют 1990"
 
-#: app/blueprints/multilingual/templates/multilingual/contact.html:34
+#: app/blueprints/multilingual/templates/multilingual/contact.html:32
 msgid "Miami, FL 33131"
-msgstr "Маямі, ФЛ 33131"
+msgstr "Майамі, ФЛ33333"
+
+#: app/blueprints/multilingual/templates/multilingual/index.html:8
+msgid "At least apply to the wound"
+msgstr "Хоч до рани прикладай"
 
 #: app/blueprints/multilingual/templates/multilingual/photos.html:24
 msgid "Open seasson 2023"
@@ -87,20 +85,20 @@ msgstr "Далеко, за горизонт..."
 
 #: app/blueprints/multilingual/templates/multilingual/photos.html:34
 msgid "Received club t-shirts"
-msgstr "Отримали футболки"
+msgstr "Отримали клубні футболки"
 
 #: app/blueprints/multilingual/templates/multilingual/photos.html:38
 msgid "Moto cat in the Podorozhniki club"
-msgstr "Мотокіт в клубі"
+msgstr "Мото кіт байк клубу"
 
 #: app/blueprints/multilingual/templates/multilingual/photos.html:42
 #: app/blueprints/multilingual/templates/multilingual/photos.html:52
 msgid "Lorem ipsum dolor sit amet"
-msgstr "БЛаблабла"
+msgstr "Блаблабла"
 
 #: app/blueprints/multilingual/templates/multilingual/photos.html:48
 msgid "Crazy Did Valerka!!"
-msgstr "Скажений дід Валерка"
+msgstr "Скажений Дід Валерка"
 
 #: app/templates/base.html:16
 msgid "Main"
@@ -114,15 +112,15 @@ msgstr "Фото"
 msgid "Contacts"
 msgstr "Контакти"
 
-#: app/templates/base.html:19
-msgid "Language:"
-msgstr "Мова"
-
 #: app/templates/base.html:21
+msgid "Language:"
+msgstr "Мова:"
+
+#: app/templates/base.html:22
 msgid "English"
 msgstr "Англійська"
 
-#: app/templates/base.html:22
+#: app/templates/base.html:23
 msgid "Ukraine"
 msgstr "Українська"
 
