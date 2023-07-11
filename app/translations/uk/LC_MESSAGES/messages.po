@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2023-07-11 11:34+0300\n"
-"PO-Revision-Date: 2023-07-11 11:36+0300\n"
+"POT-Creation-Date: 2023-07-11 13:17+0300\n"
+"PO-Revision-Date: 2023-07-11 13:17+0300\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: uk\n"
 "Language-Team: uk <LL@li.org>\n"
@@ -18,6 +18,89 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.12.1\n"
+
+#: app/blueprints/multilingual/templates/multilingual/404.html:13
+msgid "Page Not Found"
+msgstr "Сторінку не знайдено"
+
+#: app/blueprints/multilingual/templates/multilingual/500.html:11
+msgid "An unexpected error has occurred"
+msgstr "Сталася неочікувана помилка"
+
+#: app/blueprints/multilingual/templates/multilingual/500.html:12
+msgid "The administrator has been notified. Sorry for the inconvenience!"
+msgstr "Адміністратора повідомлено. Вибачте за незручності!"
+
+#: app/blueprints/multilingual/templates/multilingual/contact.html:15
+#: app/blueprints/multilingual/templates/multilingual/photos.html:17
+msgid "Official website of the biker club Podorozhnyky"
+msgstr "Офіційний вебсайт байк клубу Подорожники"
+
+#: app/blueprints/multilingual/templates/multilingual/contact.html:16
+msgid ""
+"The goal of the club is to unite like-minded people, no matter what bikes"
+" they ride,\n"
+"\t\t\t\tas well as to maintain a healthy lifestyle. In our club, everyone"
+" is on the same level - all bikers, all people - even despite the "
+"division of powers.\n"
+"\t\t\t\tWe ride motorcycles not from idleness, we ride motorcycles after "
+"work - in the evening and at night! This is our lifestyle!"
+msgstr "Мета клубу - об'єднати однодумців, не дивлячись на яких мотоциклах"
+"вони їздять,\n"
+"\t\t\t\а також вести здоровий спосіб життя. У нашому клубі всі"
+" знаходиться на одному рівні - всі байкери, всі люди - навіть, незважаючи на "
+"розподіл влади.\n"
+\t\t\t\tМи їздимо на мотоциклах не з безділля, ми їздимо на мотоциклах після»
+"Робота - ввечері і вночі! Це наш стиль життя!"
+
+#: app/blueprints/multilingual/templates/multilingual/contact.html:19
+msgid "Location: Ukraine, Valki"
+msgstr "Розташування: Україна, Валки"
+
+#: app/blueprints/multilingual/templates/multilingual/contact.html:27
+msgid "President: "
+msgstr "Президент: "
+
+#: app/blueprints/multilingual/templates/multilingual/contact.html:28
+msgid "Vice president: "
+msgstr "Віце президент: "
+
+#: app/blueprints/multilingual/templates/multilingual/contact.html:32
+msgid "1001 Brickell Bay Dr."
+msgstr "1001 Брайкел Бей"
+
+#: app/blueprints/multilingual/templates/multilingual/contact.html:33
+msgid "Suite 1900"
+msgstr "Сюти 1900"
+
+#: app/blueprints/multilingual/templates/multilingual/contact.html:34
+msgid "Miami, FL 33131"
+msgstr "Маямі, ФЛ 33131"
+
+#: app/blueprints/multilingual/templates/multilingual/photos.html:24
+msgid "Open seasson 2023"
+msgstr "Відкриття сезона 2023"
+
+#: app/blueprints/multilingual/templates/multilingual/photos.html:28
+msgid "Far away, over the horizon..."
+msgstr "Далеко, за горизонт..."
+
+#: app/blueprints/multilingual/templates/multilingual/photos.html:34
+msgid "Received club t-shirts"
+msgstr "Отримали футболки"
+
+#: app/blueprints/multilingual/templates/multilingual/photos.html:38
+msgid "Moto cat in the Podorozhniki club"
+msgstr "Мотокіт в клубі"
+
+#: app/blueprints/multilingual/templates/multilingual/photos.html:42
+#: app/blueprints/multilingual/templates/multilingual/photos.html:52
+msgid "Lorem ipsum dolor sit amet"
+msgstr "БЛаблабла"
+
+#: app/blueprints/multilingual/templates/multilingual/photos.html:48
+msgid "Crazy Did Valerka!!"
+msgstr "Скажений дід Валерка"
 
 #: app/templates/base.html:16
 msgid "Main"
@@ -33,7 +116,7 @@ msgstr "Контакти"
 
 #: app/templates/base.html:19
 msgid "Language:"
-msgstr "Мова:"
+msgstr "Мова"
 
 #: app/templates/base.html:21
 msgid "English"
@@ -41,5 +124,5 @@ msgstr "Англійська"
 
 #: app/templates/base.html:22
 msgid "Ukraine"
-msgstr "Українска"
+msgstr "Українська"
 
