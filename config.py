@@ -11,7 +11,7 @@ dotenv.load_dotenv(dotenv_path)
 
 class BaseConfig:
     SECRET_KEY = os.environ.get('SECRET_KEY') or 'A SECRET KEY'
-    LANGUAGES = ['en', 'uk']
+    LANGUAGES = ['en', 'uk', 'ru']
 
 
 class DevelopmentConfig(BaseConfig):
