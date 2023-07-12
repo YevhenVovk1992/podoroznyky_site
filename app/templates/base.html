@@ -5,6 +5,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
 	<body>
 
@@ -13,15 +14,17 @@
 
 				<!-- Menu -->
 				<nav>
-					<a href="{{ url_for('multilingual.index') }}">{{_('Main')}}</a>
-					<a href="{{ url_for('multilingual.photo_view') }}">{{_('Photos')}}</a>
-					<a href="{{ url_for('multilingual.contact_view') }}">{{_('Contacts')}}</a>
+					<a href="{{ url_for('multilingual.index') }}"><i class="fa fa-home"></i>{{_('Main')}}<span class="custom-br"></span></a>
+					<a href="{{ url_for('multilingual.photo_view') }}"><i class="fa fa-camera"></i>{{_('Photos')}}<span class="custom-br"></span></a>
+					<a href="{{ url_for('multilingual.contact_view') }}"><i class="fa fa-user-secret"></i>{{_('Contacts')}}<span class="custom-br"></span></a>
 				</nav>
+
 				<nav>
-					<a href="#">{{_('Language:')}}</a>
-					<a href="{{ url_for(request.endpoint, lang_code='en') }}">{{_('English')}}</a>
-					<a href="{{ url_for(request.endpoint, lang_code='uk') }}">{{_('Ukraine')}}</a>
+					<a href="#"><i class="fa fa-globe"></i>{{_('Language:')}}</a>
+					<a href="{{ url_for(request.endpoint, lang_code='en') }}">{{_('English')}}<span class="custom-br"></span></a>
+					<a href="{{ url_for(request.endpoint, lang_code='uk') }}">{{_('Ukraine')}}<span class="custom-br"></span></a>
 				</nav>
+
 
 				<!-- Header -->
                  {% block header %}
