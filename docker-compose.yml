@@ -1,0 +1,14 @@
+version: '3.1'
+
+services:
+  web:
+    build: .
+    container_name: 'podoroznyky-web'
+    volumes:
+      - .:/flask_app
+    ports:
+      - "5000:5000"
+    command: >
+      sh -c "pybabel compile -d app/translations &&               
+             python3 runner.py"
+    env_file: .flaskenv
