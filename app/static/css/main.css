@@ -552,7 +552,7 @@ body.is-covered #wrapper {
 
 /* Adaptive layout */
 
-@media screen and (max-width: 1280px) {
+@media all and (min-width:960px) and (max-width: 1024px) {
 
 	nav {
         width: 100%;
@@ -603,9 +603,13 @@ body.is-covered #wrapper {
         font-size: 18px;
     }
 
+     .play_video iframe {
+        height: 402px;
+    }
+
 }
 
-@media screen and (max-width: 736px) {
+@media all and (min-width:801px) and (max-width: 959px) {
 
     nav {
         width: 100%;
@@ -663,6 +667,342 @@ body.is-covered #wrapper {
         font-size: 18px;
     }
 
+     .play_video iframe {
+        height: 369px;
+    }
 }
 
+@media all and (min-width:569px) and (max-width: 800px) {
 
+    nav {
+        width: 100%;
+        height: 45px;
+    }
+
+    nav a {
+        font-family: "Oswald", sans-serif;
+        font-weight: 500;
+        margin: 3px 25px;
+        font-size: 17px;
+        }
+
+    #wrapper {
+        max-width: 56em;
+        width: 91%;
+        margin: 0px auto;
+        padding: 40px 30px;
+        opacity: 1;
+    }
+
+    #header {
+        text-align: center;
+        padding: 30px 0 100px 0;
+        background-position: 0px 430px;
+	    background-size: 92%;
+    }
+
+    #header .avatar {
+            margin: 0%;
+            margin-bottom: 50px;
+            border-radius: 100%;
+            padding: 4.5em;
+        }
+
+    #header .avatar img {
+        width: 350px;
+    }
+
+    #header .avatar-mini img {
+        width: 320px;
+    }
+
+     #header .avatar-mini {
+        margin: 10% 0 10% 0;
+        padding: 1.5em;
+     }
+
+    ul.icons li {
+        padding: 0px 3em 0 0;
+    }
+
+    .thumbnails a h3 {
+        margin: 0;
+    }
+
+    .contact_info p {
+        margin: 0px 0 3em 0;
+        font-size: 18px;
+    }
+
+    .play_video iframe {
+        height: 306px;
+    }
+
+}
+
+@media all and (min-width:481px) and (max-width: 568px) {
+
+    nav {
+        width: 100%;
+        height: 40px;
+    }
+
+    nav a {
+        font-family: "Oswald", sans-serif;
+        font-weight: 500;
+        margin: 3px 30px;
+        font-size: 15px;
+        }
+
+    h1 {
+        font-size: 1.35em;
+    }
+
+    #wrapper {
+        width: 95%;
+        margin: 0px auto;
+        padding: 20px 14px;
+        opacity: 1;
+    }
+
+    #header {
+        text-align: center;
+        padding: 30px 0 100px 0;
+        background-position: 0px 430px;
+	    background-size: 92%;
+    }
+
+    #header .avatar {
+            margin: 0%;
+            margin-bottom: 80px;
+            border-radius: 100%;
+            padding: 3.5em;
+        }
+
+    #header .avatar img {
+        width: 300px;
+    }
+
+    #header .avatar-mini img {
+        width: 280px;
+    }
+
+     #header .avatar-mini {
+        margin: 10% 0 10% 0;
+        padding: 1.5em;
+     }
+
+    ul.icons li {
+        padding: 0px 2em 0 0;
+    }
+
+    .thumbnails a h3 {
+        font-size: 80%;
+        margin: 3%;
+    }
+
+    .contact_info p {
+        margin: 0px 0 1em 0;
+        font-size: 15px;
+
+    }.contact_info h2 {
+        font-size: 22px;
+    }
+
+    .play_video {
+        width: 100%;
+        margin-left: 0%;
+    }
+
+    .play_video iframe {
+        height: 285px;
+    }
+}
+
+@media all and (min-width:321px) and (max-width: 480px) {
+
+    nav {
+        width: 100%;
+        height: 40px;
+    }
+
+    nav a {
+        font-family: "Oswald", sans-serif;
+        font-weight: 500;
+        margin: 8px 10px;
+        font-size: 14px;
+        }
+
+    h1 {
+        font-size: 1.35em;
+    }
+
+    #wrapper {
+        width: 98%;
+        margin: 0px auto;
+        padding: 15px 50px;
+        opacity: 1;
+    }
+
+    #header {
+        text-align: center;
+        padding: 30px 0 100px 0;
+        background-position: 0px 430px;
+	    background-size: 92%;
+    }
+
+    #header .avatar {
+            margin: 0%;
+            margin-bottom: 80px;
+            border-radius: 100%;
+            padding: 1.0em;
+        }
+
+    #header .avatar img {
+        width: 260px;
+    }
+
+    #header .avatar-mini img {
+        width: 245px;
+    }
+
+     #header .avatar-mini {
+        margin: 10% 0 10% 0;
+        padding: 1.5em;
+     }
+
+    ul.icons li {
+        display: block;
+        padding: 0px 0em 5% 0;
+    }
+
+    .thumbnails a h3 {
+        font-size: 90%;
+        margin: 3%;
+    }
+    .thumbnails a {
+        width: 110%;
+        margin: 0px 0 2em 0;
+    }
+
+    .thumbnails div {
+        padding-left: 1em;
+    }
+
+    .contact_info p {
+        margin: 0px 0 1em 0;
+        font-size: 18px;
+    }
+
+     .contact_info {
+        width: 100%;
+        padding-left: 0%;
+    }
+
+    .contact_info h2 {
+        font-size: 22px;
+    }
+
+    .play_video iframe {
+        height: 0px;
+    }
+
+    .play_video {
+        height: 0px;
+    }
+
+}
+
+@media all and (min-width:0px) and (max-width: 320px) {
+
+  nav {
+        width: 100%;
+        height: 40px;
+    }
+
+    nav a {
+        font-family: "Oswald", sans-serif;
+        font-weight: 500;
+        margin: 6px 3px;
+        font-size: 16px;
+        }
+
+    h1 {
+        font-size: 1.35em;
+    }
+
+    #wrapper {
+        width: 98%;
+        margin: 0px auto;
+        padding: 15px 50px;
+        opacity: 1;
+    }
+
+    #header {
+        text-align: center;
+        padding: 30px 0 100px 0;
+        background-position: 0px 430px;
+	    background-size: 92%;
+    }
+
+    #header .avatar {
+            margin: 0%;
+            margin-bottom: 80px;
+            border-radius: 100%;
+            padding: 1.0em;
+        }
+
+    #header .avatar img {
+        width: 260px;
+    }
+
+    #header .avatar-mini img {
+        width: 245px;
+    }
+
+     #header .avatar-mini {
+        margin: 10% 0 10% 0;
+        padding: 1.5em;
+     }
+
+    ul.icons li {
+        display: block;
+        padding: 0px 0em 5% 0;
+    }
+
+    .thumbnails a h3 {
+        font-size: 90%;
+        margin: 3%;
+    }
+    .thumbnails a {
+        width: 110%;
+        margin: 0px 0 2em 0;
+    }
+
+    .thumbnails div {
+        padding-left: 1em;
+    }
+
+    .contact_info p {
+        margin: 0px 0 1em 0;
+        font-size: 18px;
+    }
+
+     .contact_info {
+        width: 100%;
+        padding-left: 0%;
+    }
+
+    .contact_info h2 {
+        font-size: 22px;
+    }
+
+    .play_video iframe {
+        height: 0px;
+    }
+
+    .play_video {
+        height: 0px;
+    }
+
+}
