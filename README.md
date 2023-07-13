@@ -17,14 +17,11 @@ ___
 _Technologies used_: Flask, Flask-babel, html, css, js
 
 ## What we do?
-Create an API in Python, which implements a single endpoint that accepts syntactic input
-tree of the English text and returns its paraphrased versions:
- - path: /paraphrase
- - HTTP method: GET
- - query parameters:
-   - tree: str (required) – a syntactic tree in the form of a string (see example below)
-   - limit: int (optional, default: 20) - the maximum number of paraphrased texts that
-response must be returned: a list of paraphrased trees in JSON format.
+It is a web application with frontend and backend. The main task of the application is informational.
+The site contains information about the biker club, a photo from the event, a video presentation and 
+a map with the location of the headquarters.
+The web application has 2 languages - English and Ukrainian. Depending on the data that comes from the user's browser, 
+the server determines the user's preferred language.
 
 
 ## How to start project?
@@ -34,7 +31,8 @@ response must be returned: a list of paraphrased trees in JSON format.
 	- SECRET_KEY (Fot example: '*jfjn&nf8jfghg=fgkhd6k56566');
 	- DEBUG=1 for development;
     - FLASK_APP=runner.py;
-4. Run `python3 runner.py`;
+4. Run `pybabel compile -d app/translations` The command will create a configuration file with translations for the site;
+5. Run `python3 runner.py` ;
 
 <h6>If information has been added to the site that needs to be translated, the following instructions will help you.</h6>
 If we want to scan files, restore the layout in the file, to translate the text, this is done using the command
