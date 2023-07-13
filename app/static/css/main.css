@@ -796,6 +796,10 @@ body.is-covered #wrapper {
         padding: 0px 2em 0 0;
     }
 
+    .thumbnails {
+        margin: 0 2em 2em 0em;
+    }
+
     .thumbnails a h3 {
         font-size: 80%;
         margin: 3%;
@@ -838,9 +842,9 @@ body.is-covered #wrapper {
     }
 
     #wrapper {
-        width: 98%;
+        width: 100%;
         margin: 0px auto;
-        padding: 15px 50px;
+        padding: 10px 0px;
         opacity: 1;
     }
 
@@ -876,6 +880,10 @@ body.is-covered #wrapper {
         padding: 0px 0em 5% 0;
     }
 
+    .thumbnails {
+        margin: 0 3em 2em 1em;
+    }
+
     .thumbnails a h3 {
         font-size: 90%;
         margin: 3%;
@@ -895,8 +903,8 @@ body.is-covered #wrapper {
     }
 
      .contact_info {
-        width: 100%;
-        padding-left: 0%;
+        width: 90%;
+        padding-left: 5%;
     }
 
     .contact_info h2 {
