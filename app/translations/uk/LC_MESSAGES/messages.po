@@ -75,31 +75,6 @@ msgstr "Майамі, ФЛ33333"
 msgid "At least apply to the wound"
 msgstr "Хоч до рани прикладай"
 
-#: app/blueprints/multilingual/templates/multilingual/photos.html:24
-msgid "Open seasson 2023"
-msgstr "Відкриття сезона 2023"
-
-#: app/blueprints/multilingual/templates/multilingual/photos.html:28
-msgid "Far away, over the horizon..."
-msgstr "Далеко, за горизонт..."
-
-#: app/blueprints/multilingual/templates/multilingual/photos.html:34
-msgid "Received club t-shirts"
-msgstr "Отримали клубні футболки"
-
-#: app/blueprints/multilingual/templates/multilingual/photos.html:38
-msgid "Moto cat in the Podorozhniki club"
-msgstr "Мото кіт байк клубу"
-
-#: app/blueprints/multilingual/templates/multilingual/photos.html:42
-#: app/blueprints/multilingual/templates/multilingual/photos.html:52
-msgid "Lorem ipsum dolor sit amet"
-msgstr "Блаблабла"
-
-#: app/blueprints/multilingual/templates/multilingual/photos.html:48
-msgid "Crazy Did Valerka!!"
-msgstr "Скажений Дід Валерка"
-
 #: app/templates/base.html:16
 msgid "Main"
 msgstr "Головна"
