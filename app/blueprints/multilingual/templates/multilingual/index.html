@@ -5,13 +5,12 @@
 {% block header %}
 	<header id="header">
 		<span class="avatar"><img src="{{ url_for('static', filename='img/avatar.png') }}" alt="" /></span>
-		<h1>{{_('At least apply to the wound')}}...</h1>
+		<h1 class="title_text">{{_('At least apply to the wound')}}...</h1>
 		<ul class="icons">
-			<li><a href="#" class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li>
-			<li><a href="#" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
-			<li><a href="#" class="icon style2 fa-instagram"><span class="label">Instagram</span></a></li>
-			<li><a href="#" class="icon style2 fa-500px"><span class="label">500px</span></a></li>
-			<li><a href="#" class="icon style2 fa-envelope-o"><span class="label">Email</span></a></li>
+			<li><a href="https://www.facebook.com/profile.php?id=100094907772038" class="icon style2 fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
+			<li><a href="https://www.instagram.com/mfc_podorozhnyky/" class="icon style2 fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
+			<li><a href="https://telegram.me/Podorozhnyky" class="icon style2 fa-telegram" target="_blank"><span class="label">Telegram</span></a></li>
+			<li><a href="mailto: mfc.podorozhnyky@gmail.com" class="icon style2 fa-envelope-o"><span class="label">Email</span></a></li>
 		</ul>
 	</header>
 {% endblock %}

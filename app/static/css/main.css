@@ -173,6 +173,10 @@ body, input, select, textarea {
 	line-height: 1.65;
 }
 
+.title_text {
+    padding: 60px;
+}
+
 a {
 	color: inherit;
 	text-decoration: none;		
@@ -191,31 +195,38 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: 200;
 	line-height: 1.5;
 	margin: 0 0 1em 0;
+	letter-spacing: 0.4px;
 }
 
 h1 {
 	font-size: 1.75em;
 	text-align: center;
+	font-family: 'Yeseva One', cursive;
 }
 	
 h2 {
 	font-size: 1.35em;
+	font-family: 'Yeseva One', cursive;
 }	
 
 h3 {
 	font-size: 1em;
+	font-family: 'Yeseva One', cursive;
 }
 
 h4 {
 	font-size: 1em;
+	font-family: 'Yeseva One', cursive;
 }
 
 h5 {
 	font-size: 0.9em;
+	font-family: 'Yeseva One', cursive;
 }
 
 h6 {
 	font-size: 0.7em;
+	font-family: 'Yeseva One', cursive;
 }
 
 
@@ -389,7 +400,16 @@ ul.icons li:last-child {
 	margin-bottom: 0;
 }
 
+/* Photo section */
 
+#main h1{
+    font-family: 'Yeseva One', cursive;
+}
+
+.photo_head {
+    padding: 3%;
+    text-align: center;
+}
 
 /* Wrapper */
 
@@ -434,7 +454,13 @@ body.is-covered #wrapper {
 }
 
 #header h1 {
-	color: rgba(255, 255, 255, 0.65);
+	color: rgb(255 255 255 / 54%);
+    font-family: 'Ruslan Display', cursive;
+    text-shadow: 3px 13px 11px #db9f8994;
+    font-weight: bold;
+    font-size: 40px;
+    word-spacing: 8px;
+    letter-spacing: 3px;
 }
 
 #header .avatar {	
@@ -542,6 +568,10 @@ body.is-covered #wrapper {
 	padding: 4em 0 1em 0;
 }
 
+#footer p {
+    font-family: 'Lilita One', cursive;
+}
+
 #footer:before {
 	content: '';
 	border-top: solid 1px rgba(255, 255, 255, 0.25);
@@ -580,15 +610,19 @@ body.is-covered #wrapper {
     #header {
         text-align: center;
         padding: 40px 0 120px 0;
-        background-position: 70px 430px;
-	    background-size: 80%;
+	    background-position: 111px 600px;
+        background-size: 71%;
+    }
+
+    #header h1 {
+        padding: 90px;
     }
 
     #header .avatar {
-            margin: 5%;
-            border-radius: 100%;
-            padding: 4.5em;
-        }
+        margin: 5%;
+        border-radius: 100%;
+        padding: 2.5em;
+    }
 
     #header .avatar-mini img {
         width: 320px;
@@ -639,12 +673,16 @@ body.is-covered #wrapper {
 	    background-size: 92%;
     }
 
+    #header h1 {
+        padding: 70px;
+    }
+
     #header .avatar {
-            margin: 0%;
-            margin-bottom: 50px;
-            border-radius: 100%;
-            padding: 4.5em;
-        }
+        margin: 0%;
+        margin-bottom: 50px;
+        border-radius: 100%;
+        padding: 4.5em;
+    }
 
     #header .avatar img {
         width: 350px;
@@ -697,16 +735,23 @@ body.is-covered #wrapper {
     #header {
         text-align: center;
         padding: 30px 0 100px 0;
-        background-position: 0px 430px;
+        background-position: 0px 450px;
 	    background-size: 92%;
     }
 
+    #header h1 {
+        font-size: 27px;
+        word-spacing: 5px;
+        letter-spacing: 0px;
+        padding: 50px 0px 0px 0px;
+    }
+
     #header .avatar {
-            margin: 0%;
-            margin-bottom: 50px;
-            border-radius: 100%;
-            padding: 4.5em;
-        }
+        margin: 0%;
+        margin-bottom: 50px;
+        border-radius: 100%;
+        padding: 4.5em;
+    }
 
     #header .avatar img {
         width: 350px;
@@ -719,6 +764,10 @@ body.is-covered #wrapper {
      #header .avatar-mini {
         margin: 10% 0 10% 0;
         padding: 1.5em;
+     }
+
+     .title_text {
+         padding: 50px;
      }
 
     ul.icons li {
@@ -736,6 +785,10 @@ body.is-covered #wrapper {
 
     .play_video iframe {
         height: 306px;
+    }
+
+    #footer {
+        font-size: 75%;
     }
 
 }
@@ -768,8 +821,15 @@ body.is-covered #wrapper {
     #header {
         text-align: center;
         padding: 30px 0 100px 0;
-        background-position: 0px 430px;
+        background-position: 0px 400px;
 	    background-size: 92%;
+    }
+
+    #header h1 {
+        font-size: 27px;
+        word-spacing: 5px;
+        letter-spacing: 0px;
+        padding: 50px 0px 0px 0px;
     }
 
     #header .avatar {
@@ -797,11 +857,11 @@ body.is-covered #wrapper {
     }
 
     .thumbnails {
-        margin: 0 2em 2em 0em;
+        margin: 0 1em 2em -1em;
     }
 
     .thumbnails a h3 {
-        font-size: 80%;
+        font-size: 70%;
         margin: 3%;
     }
 
@@ -821,6 +881,10 @@ body.is-covered #wrapper {
     .play_video iframe {
         height: 285px;
     }
+
+    #footer {
+        font-size: 75%;
+    }
 }
 
 @media all and (min-width:321px) and (max-width: 480px) {
@@ -831,7 +895,6 @@ body.is-covered #wrapper {
     }
 
     nav a {
-        font-family: "Oswald", sans-serif;
         font-weight: 500;
         margin: 8px 10px;
         font-size: 14px;
@@ -851,16 +914,23 @@ body.is-covered #wrapper {
     #header {
         text-align: center;
         padding: 30px 0 100px 0;
-        background-position: 0px 430px;
+        background-position: 5px 300px;
 	    background-size: 92%;
     }
 
+    #header h1 {
+        font-size: 21px;
+        word-spacing: 9px;
+        letter-spacing: 3px;
+        padding: 15px 0px 0px 0px;
+    }
+
     #header .avatar {
-            margin: 0%;
-            margin-bottom: 80px;
-            border-radius: 100%;
-            padding: 1.0em;
-        }
+        margin: 0%;
+        margin-bottom: 80px;
+        border-radius: 100%;
+        padding: 1.0em;
+    }
 
     #header .avatar img {
         width: 260px;
@@ -875,31 +945,35 @@ body.is-covered #wrapper {
         padding: 1.5em;
      }
 
+     .title_text {
+         padding: 20px;
+     }
+
     ul.icons li {
         display: block;
         padding: 0px 0em 5% 0;
     }
 
     .thumbnails {
-        margin: 0 3em 2em 1em;
+        margin: 0em 2.2em 0em 1em;
+    }
+
+    .thumbnails > div {
+        padding-left: 1em;
     }
 
     .thumbnails a h3 {
-        font-size: 90%;
-        margin: 3%;
+        font-size: 60%;
+        margin: 2%;
     }
     .thumbnails a {
         width: 110%;
         margin: 0px 0 2em 0;
     }
 
-    .thumbnails div {
-        padding-left: 1em;
-    }
-
     .contact_info p {
         margin: 0px 0 1em 0;
-        font-size: 18px;
+        font-size: 14px;
     }
 
      .contact_info {
@@ -919,6 +993,15 @@ body.is-covered #wrapper {
         height: 0px;
     }
 
+    .custom-br {
+        height: 1.0px;
+        width: 90%;
+    }
+
+    #footer {
+        font-size: 75%;
+    }
+
 }
 
 @media all and (min-width:0px) and (max-width: 320px) {
@@ -929,14 +1012,17 @@ body.is-covered #wrapper {
     }
 
     nav a {
-        font-family: "Oswald", sans-serif;
         font-weight: 500;
         margin: 6px 3px;
-        font-size: 16px;
+        font-size: 10px;
         }
 
     h1 {
         font-size: 1.35em;
+    }
+
+    .title_text {
+        padding: 20px;
     }
 
     #wrapper {
@@ -949,23 +1035,30 @@ body.is-covered #wrapper {
     #header {
         text-align: center;
         padding: 30px 0 100px 0;
-        background-position: 0px 430px;
+        background-position: 5px 340px;
 	    background-size: 92%;
     }
 
+     #header h1 {
+        font-size: 21px;
+        word-spacing: 9px;
+        letter-spacing: 3px;
+        padding: 15px 0px 0px 0px;
+    }
+
     #header .avatar {
-            margin: 0%;
-            margin-bottom: 80px;
-            border-radius: 100%;
-            padding: 1.0em;
-        }
+        margin: 0%;
+        margin-bottom: 80px;
+        border-radius: 100%;
+        padding: 1.0em;
+    }
 
     #header .avatar img {
-        width: 260px;
+        width: 160px;
     }
 
     #header .avatar-mini img {
-        width: 245px;
+        width: 140px;
     }
 
      #header .avatar-mini {
@@ -979,7 +1072,7 @@ body.is-covered #wrapper {
     }
 
     .thumbnails a h3 {
-        font-size: 90%;
+        font-size: 50%;
         margin: 3%;
     }
     .thumbnails a {
@@ -993,7 +1086,7 @@ body.is-covered #wrapper {
 
     .contact_info p {
         margin: 0px 0 1em 0;
-        font-size: 18px;
+        font-size: 14px;
     }
 
      .contact_info {
@@ -1013,4 +1106,12 @@ body.is-covered #wrapper {
         height: 0px;
     }
 
+    .custom-br {
+        height: 1.0px;
+        width: 90%;
+    }
+
+    #footer {
+        font-size: 75%;
+    }
 }
