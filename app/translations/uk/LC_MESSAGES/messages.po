@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2023-07-11 17:10+0300\n"
-"PO-Revision-Date: 2023-07-11 17:11+0300\n"
+"POT-Creation-Date: 2023-07-20 13:11+0300\n"
+"PO-Revision-Date: 2023-07-20 13:12+0300\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: uk\n"
 "Language-Team: uk <LL@li.org>\n"
@@ -29,73 +29,72 @@ msgstr "Адміністратора повідомлено. Вибачте за
 
 #: app/blueprints/multilingual/templates/multilingual/contact.html:15
 #: app/blueprints/multilingual/templates/multilingual/photos.html:17
-msgid "Official website of the biker club Podorozhnyky"
-msgstr "Офіційний веб сайт байк клуба Подорожники"
+msgid "Official Website Of The Biker Club Podorozhnyky"
+msgstr "Офіційний сайт байк клуба Подорожники"
 
 #: app/blueprints/multilingual/templates/multilingual/contact.html:16
 msgid ""
-"The goal of the club is to unite like-minded people, no matter what bikes"
-" they ride, as well as to maintain a healthy lifestyle. In our club, "
-"everyone is on the same level - all bikers, all people - even despite the"
-" division of powers. We ride motorcycles not from idleness, we ride "
-"motorcycles after work - in the evening and at night! This is our "
-"lifestyle!"
-msgstr "Мета клубу - об'єднати однодумців, не дивлячись на яких мотоциклах"
-" катаються, а також пропаганда здорового способу життя. У нашому клубі "
-"усі на одному рівні - всі байкери, всі люди - навіть незважаючи на"
-«Розподіл влади. Ми їздимо на мотоциклах не з бездіяльності, ми їздимо»
-"мотоцикли після роботи - ввечері та вночі! Це наш"
-"спосіб життя!""
+"The purpose of the club is to unite like-minded people, regardless of "
+"which motorcycles they ride, as well as promotion of a healthy lifestyle "
+"and not only that. Support for young people who want to learn more about "
+"the biker movement in Ukraine. Help to everyone who needs it on the road."
+"\n"
+"In our club, everyone is on the same level - all bikers, all people - "
+"even despite the motorcycles."
+msgstr ""
+"Мета клубу – об’єднати однодумців, незалежно від того,"
+"на яких мотоциклах вони їздять, а також пропагування здорового способу життя "
+"і не тільки це. Підтримка молодих людей, які хочуть дізнатися більше про "
+"байкерський рух в Україні. Допомога всім, хто цього потребує в дорозі."
+"\n"
+"У нашому клубі всі на одному рівні - всі байкери, всі люди - "
+"навіть незважаючи на мотоцикли."
 
-#: app/blueprints/multilingual/templates/multilingual/contact.html:17
+#: app/blueprints/multilingual/templates/multilingual/contact.html:18
 msgid "Location: Ukraine, Valki"
 msgstr "Місцезнаходження: Україна, м. Валки"
 
-#: app/blueprints/multilingual/templates/multilingual/contact.html:25
-msgid "President: "
-msgstr "Президент: "
-
-#: app/blueprints/multilingual/templates/multilingual/contact.html:26
+#: app/blueprints/multilingual/templates/multilingual/contact.html:27
 msgid "Vice president: "
 msgstr "Віце президент: "
 
-#: app/blueprints/multilingual/templates/multilingual/contact.html:30
-msgid "1001 Brickell Bay Dr."
-msgstr "1001 Бриккі Бей"
-
-#: app/blueprints/multilingual/templates/multilingual/contact.html:31
-msgid "Suite 1900"
-msgstr "Сют 1990"
-
 #: app/blueprints/multilingual/templates/multilingual/contact.html:32
-msgid "Miami, FL 33131"
-msgstr "Майамі, ФЛ33333"
+msgid "Stadionna Street, 1"
+msgstr "Вулиця Стадіонна 1"
+
+#: app/blueprints/multilingual/templates/multilingual/contact.html:33
+msgid "Ukraine, Valki"
+msgstr "Україна, Валки"
 
 #: app/blueprints/multilingual/templates/multilingual/index.html:8
 msgid "At least apply to the wound"
 msgstr "Хоч до рани прикладай"
 
-#: app/templates/base.html:16
+#: app/blueprints/multilingual/templates/multilingual/photos.html:19
+msgid "Photo Gallery"
+msgstr "Фотогалерея"
+
+#: app/templates/base.html:24
 msgid "Main"
 msgstr "Головна"
 
-#: app/templates/base.html:17
+#: app/templates/base.html:25
 msgid "Photos"
 msgstr "Фото"
 
-#: app/templates/base.html:18
+#: app/templates/base.html:26
 msgid "Contacts"
 msgstr "Контакти"
 
-#: app/templates/base.html:21
+#: app/templates/base.html:30
 msgid "Language:"
 msgstr "Мова:"
 
-#: app/templates/base.html:22
+#: app/templates/base.html:31
 msgid "English"
 msgstr "Англійська"
 
-#: app/templates/base.html:23
+#: app/templates/base.html:32
 msgid "Ukraine"
-msgstr "Українська"
+msgstr "Українаська"
 
