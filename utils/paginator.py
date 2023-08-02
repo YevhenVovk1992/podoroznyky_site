@@ -33,7 +33,7 @@ class CustomPaginator:
             if self.page == self.total_pages:
                 return None
             return self.page + 1
-        return self.page
+        return None
 
     def _get_total_pages(self):
         n = len(self.array) / self.per_page
@@ -60,7 +60,7 @@ class CustomPaginator:
 
 if __name__ == '__main__':
     data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
-    pag = CustomPaginator(2, data, 10)
+    pag = CustomPaginator(1, data, 12)
     print(pag.total_pages, 'total')
     print(pag.next_page, 'next')
     print(pag.has_next_page(), 'has next')

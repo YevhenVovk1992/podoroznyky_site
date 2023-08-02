@@ -19,9 +19,25 @@
 			<h3>{{_('Photo Gallery')}}</h3>
 		</div>
 
+		<!-- Paginator -->
+		<div class="pagination">
+			<a href="?page=1">&laquo;</a>
+
+			{% if content.paginator.previous_page %}
+				<a href="?page={{ content.paginator.previous_page }}">{{ content.paginator.previous_page }}</a>
+			{% endif %}
+
+			<a class="active" href="?page={{ content.paginator.page }}" >{{ content.paginator.page }}</a>
+
+			{% if content.paginator.next_page %}
+				<a href="?page={{ content.paginator.next_page }}">{{ content.paginator.next_page }}</a>
+			{% endif %}
+
+			<a href="?page={{ content.paginator.total_pages }}">&raquo;</a>
+		</div>
+
 		<!-- Thumbnails -->
 			<section class="thumbnails">
-
 				<div>
 					{% for el in content.images_list.0 %}
 						<a href="{{ url_for('static', filename='img/fulls/' + el) }}">
@@ -47,19 +63,6 @@
 							{% endif %}
 						</a>
 					{% endfor %}
-
-					{% if content.images_list|length > 3 %}
-						{% for el in content.images_list.3 %}
-						<a href="{{ url_for('static', filename='img/fulls/' + el) }}">
-							<img src="{{ url_for('static', filename='img/photos/' + el) }}" alt="" />
-							{% if content.comment_text[el] %}
-								<h3>{{ content.comment_text[el] }}</h3>
-							{% else  %}
-								<h3>{{ el }}</h3>
-							{% endif %}
-						</a>
-						{% endfor %}
-					{% endif %}
 				</div>
 
 				<div>
