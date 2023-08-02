@@ -149,6 +149,14 @@ img {vertical-align: middle;}
     margin: auto;
 }
 
+.slideshow-container img {
+    width: 100%;
+}
+
+.dot_container {
+    text-align: center;
+}
+
 .dot {
     height: 14px;
     width: 14px;
