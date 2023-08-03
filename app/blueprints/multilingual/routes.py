@@ -83,7 +83,10 @@ def photo_view():
     images_list.sort(reverse=True)
 
     # Pagination images and group by 3 column
-    page = int(request.args.get('page', 1))
+    try:
+        page = int(request.args.get('page', 1))
+    except ValueError:
+        page = 1
     paginator = PG.CustomPaginator(page, images_list, 18)
     data_list = paginator.get_data()
     list_for_template = group_list_element(data_list)
