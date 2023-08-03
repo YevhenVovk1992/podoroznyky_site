@@ -50,7 +50,15 @@ def index():
     """
     The function renders start page.
     """
-    return render_template('multilingual/index.html', title='Home')
+    base_dir = os.path.abspath(os.curdir)
+    banner_list = os.listdir(base_dir + '/app/static/img/banners/')
+    return render_template(
+        'multilingual/index.html',
+        title='Home',
+        content={
+            'banner': banner_list
+        }
+    )
 
 
 @multilingual.route('/contacts/')
@@ -93,5 +101,9 @@ def photo_view():
     return render_template(
         'multilingual/photos.html',
         title='Photos',
-        content={'images_list': list_for_template, 'comment_text': comment_text, 'paginator': paginator}
+        content={
+            'images_list': list_for_template,
+            'comment_text': comment_text,
+            'paginator': paginator
+        }
     )

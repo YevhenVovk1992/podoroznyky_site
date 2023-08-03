@@ -22,22 +22,18 @@
 		<div class="banner_wrapper">
 			<div class="slideshow-container">
 
-				<div class="mySlides fade">
-				  <img src="{{ url_for('static', filename='img/banners/banner_facebook.jpg') }}" >
-				</div>
-
-				<div class="mySlides fade">
-				  <img src="{{ url_for('static', filename='img/banners/banner_facebook_pirat.jpg') }}" >
-				</div>
-
-				<div class="mySlides fade">
-				  <img src="{{ url_for('static', filename='img/banners/banner_facebook_girl.jpg') }}" >
-				</div>
+				{% for banner in content.banner %}
+					<div class="mySlides fade">
+					  <img src="{{ url_for('static', filename='img/banners/' + banner) }}" >
+					</div>
+				{% endfor %}
 
 				<div class="dot_container">
-				  <span class="dot"></span>
-				  <span class="dot"></span>
-				  <span class="dot"></span>
+
+					{% for banner in content.banner %}
+					  <span class="dot"></span>
+					{% endfor %}
+
 				</div>
 
 			</div>
