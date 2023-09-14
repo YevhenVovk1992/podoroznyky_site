@@ -2,6 +2,132 @@
 @import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Oswald:500");
 
+/* animated background */
+
+#animated_background{
+  opacity: 0;
+  animation: ani 8s forwards;
+}
+
+.circles{
+    position: absolute;
+    top: 0;
+    left: 15%;
+    width: 65%;
+    height: 590px;
+}
+
+.circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+
+    background-image: url("../img/wheel.png");
+    background-size: 100%;
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+
+}
+
+.circles li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2){
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+
+}
+
+@keyframes ani {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
 /* menu */
 
 .thx {
@@ -477,9 +603,11 @@ ul.icons li:last-child {
 /* Wrapper */
 
 #wrapper {
+    position: absolute;
+    top: 0;
+    left: 15%;
 	background-color: #00000096;
-	max-width: 68em;
-	width: 100%;
+	width: 70%;
 	margin: 15px auto;
 	padding: 0 50px;
 	opacity: 1;
@@ -508,15 +636,20 @@ body.is-covered #wrapper {
 /* Header */
 
 #header {
-	text-align: center;
-	padding: 40px 0 60px 0;
-	background-image: url("../img/road1.png");
-	background-position: 60px 450px;
-	background-repeat: no-repeat;
-	background-size: 75%;
+    text-align: center;
+    padding: 40px 0 60px 0;
+    background-image: url(../img/road1.png);
+    background-position: 0px -250px;
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
-#header h1 {
+#header_index {
+    text-align: center;
+    padding: 40px 0 60px 0;
+}
+
+#header_index h1 {
 	color: rgb(255 255 255 / 54%);
     font-family: 'Ruslan Display', cursive;
     text-shadow: 3px 13px 11px #db9f8994;
@@ -526,7 +659,7 @@ body.is-covered #wrapper {
     letter-spacing: 3px;
 }
 
-#header .avatar {	
+#header_index .avatar {
 	margin: 3%;
 	border-radius: 100%;
 	display: inline-block;	
@@ -537,7 +670,7 @@ body.is-covered #wrapper {
 	transition: all 1s;	
 }
 
-#header .avatar:hover {
+#header_index .avatar:hover {
 	transition: all 1s;	
 	box-shadow: 0px 0px 80px -20px #ddd;
 	background-color: rgba(255, 255, 255, 0.25);
@@ -560,7 +693,7 @@ body.is-covered #wrapper {
 	background-color: rgba(255, 255, 255, 0.25);
 }
 
-#header .avatar img {	
+#header_index .avatar img {
 	display: block;
 	width: 460px;
 }
@@ -1208,5 +1341,4 @@ body.is-covered #wrapper {
         font-size: 75%;
     }
 }
-
 

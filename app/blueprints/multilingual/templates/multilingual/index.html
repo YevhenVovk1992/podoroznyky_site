@@ -1,9 +1,12 @@
 {% extends "base.html" %}
 
+<!-- Background -->
+{% block animate_background %}
+{% endblock %}
 
 <!-- Header -->
 {% block header %}
-	<header id="header">
+	<header id="header_index">
 		<span class="avatar"><img src="{{ url_for('static', filename='img/avatar.png') }}" alt="" /></span>
 		<h1 class="title_text">{{_('At least apply to the wound')}}...</h1>
 		<ul class="icons">
@@ -24,14 +27,14 @@
 
 				{% for banner in content.banner %}
 					<div class="mySlides fade">
-					  <img src="{{ url_for('static', filename='img/banners/' + banner) }}" >
+						<img src="{{ url_for('static', filename='img/banners/' + banner) }}" >
 					</div>
 				{% endfor %}
 
 				<div class="dot_container">
 
 					{% for banner in content.banner %}
-					  <span class="dot"></span>
+						<span class="dot"></span>
 					{% endfor %}
 
 				</div>

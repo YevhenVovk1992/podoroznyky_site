@@ -6,53 +6,57 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Ruslan+Display&family=Yeseva+One&display=swap" rel="stylesheet">
-
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Ruslan+Display&family=Yeseva+One&display=swap" rel="stylesheet">
 		<link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.ico') }}" type="image/x-icon">
 	</head>
+
 	<body>
-
-		<!-- Wrapper -->
-			<div id="wrapper">
-
-				<!-- Menu -->
-				<nav>
-					<a href="{{ url_for('multilingual.index') }}"><i class="fa fa-home"></i>{{_('Main')}}<span class="custom-br"></span></a>
-					<a href="{{ url_for('multilingual.photo_view') }}"><i class="fa fa-camera"></i>{{_('Photos')}}<span class="custom-br"></span></a>
-					<a href="{{ url_for('multilingual.contact_view') }}"><i class="fa fa-user-secret"></i>{{_('Contacts')}}<span class="custom-br"></span></a>
-				</nav>
-
-				<nav>
-					<a href="#"><i class="fa fa-globe"></i>{{_('Language:')}}</a>
-					<a href="{{ url_for(request.endpoint, lang_code='en') }}">{{_('English')}}<span class="custom-br"></span></a>
-					<a href="{{ url_for(request.endpoint, lang_code='uk') }}">{{_('Ukraine')}}<span class="custom-br"></span></a>
-				</nav>
+	<!-- Animated background -->
+	<div id="animated_background">
+		{% block animate_background %}
+	 	{% endblock %}
+	</div>
 
 
-				<!-- Header -->
-                 {% block header %}
-                 {% endblock %}
+	<!-- Wrapper -->
+		<div id="wrapper">
 
-				<!-- Main -->
-                {% block main %}
-                {% endblock %}
+			<!-- Menu -->
+			<nav>
+				<a href="{{ url_for('multilingual.index') }}"><i class="fa fa-home"></i>{{_('Main')}}<span class="custom-br"></span></a>
+				<a href="{{ url_for('multilingual.photo_view') }}"><i class="fa fa-camera"></i>{{_('Photos')}}<span class="custom-br"></span></a>
+				<a href="{{ url_for('multilingual.contact_view') }}"><i class="fa fa-user-secret"></i>{{_('Contacts')}}<span class="custom-br"></span></a>
+			</nav>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<p>&copy; All rights reserved. Design: Yevhen Vovk. 2023</p>
-					</footer>
+			<nav>
+				<a href="#"><i class="fa fa-globe"></i>{{_('Language:')}}</a>
+				<a href="{{ url_for(request.endpoint, lang_code='en') }}">{{_('English')}}<span class="custom-br"></span></a>
+				<a href="{{ url_for(request.endpoint, lang_code='uk') }}">{{_('Ukraine')}}<span class="custom-br"></span></a>
+			</nav>
 
-			</div>
+			<!-- Header -->
+			 {% block header %}
+			 {% endblock %}
 
-		<!-- Scripts -->
-			<script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
-			<script src="{{ url_for('static', filename='js/skel.min.js') }}"></script>
-			<script src="{{ url_for('static', filename='js/main.js') }}"></script>
-			<script src="{{ url_for('static', filename='js/jquery.poptrox.min.js') }}"></script>
-			<script src="{{ url_for('static', filename='js/banner.js') }}"></script>
+			<!-- Main -->
+			{% block main %}
+			{% endblock %}
+
+			<!-- Footer -->
+				<footer id="footer">
+					<p>&copy; All rights reserved. Design: Yevhen Vovk. 2023</p>
+				</footer>
+
+		</div>
+
+	<!-- Scripts -->
+		<script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/skel.min.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/jquery.poptrox.min.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/banner.js') }}"></script>
 	</body>
+
 </html>
