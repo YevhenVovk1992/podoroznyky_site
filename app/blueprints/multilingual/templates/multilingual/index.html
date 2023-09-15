@@ -1,13 +1,17 @@
 {% extends "base.html" %}
 
+
 <!-- Background -->
 {% block animate_background %}
 {% endblock %}
 
+
 <!-- Header -->
 {% block header %}
 	<header id="header_index">
-		<span class="avatar"><img src="{{ url_for('static', filename='img/avatar.png') }}" alt="" /></span>
+		<span class="avatar">
+			<img src="{{ url_for('static', filename='img/avatar.png') }}" alt="" />
+		</span>
 		<h1 class="title_text">{{_('At least apply to the wound')}}...</h1>
 		<ul class="icons">
 			<li><a href="https://www.facebook.com/profile.php?id=100094907772038" class="icon style2 fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
@@ -42,6 +46,10 @@
 			</div>
 		</div>
 	</section>
-
 {% endblock %}
 
+
+<!-- Scripts -->
+{% block js_script %}
+	<script src="{{ url_for('static', filename='js/banner.js') }}"></script>
+{% endblock %}

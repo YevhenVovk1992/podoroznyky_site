@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 
+
 <!-- Background -->
 {% block animate_background %}
 	<ul class="circles">
@@ -15,6 +16,7 @@
 		<li></li>
 	</ul>
 {% endblock %}
+
 
 <!-- Header -->
 {% block header %}
@@ -93,8 +95,12 @@
 						</a>
 					{% endfor %}
 				</div>
-
 			</section>
-
 	</section>
+{% endblock %}
+
+
+<!-- Scripts -->
+{% block js_script %}
+	<script src="{{ url_for('static', filename='js/jquery.poptrox.min.js') }}"></script>
 {% endblock %}

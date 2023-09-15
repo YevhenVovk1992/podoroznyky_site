@@ -13,28 +13,78 @@
 	</head>
 
 	<body>
+
 	<!-- Animated background -->
 	<div id="animated_background">
 		{% block animate_background %}
 	 	{% endblock %}
 	</div>
 
-
 	<!-- Wrapper -->
 		<div id="wrapper">
+			<div class="top_menu">
+				<ul>
+					<li class="menu_li">
+						<a href="{{ url_for('multilingual.index') }}">
+							<span>
+								<i class="fa fa-home"></i>
+								{{_('Main')}}
+							</span>
+							<span>
+								<i class="fa fa-home"></i>
+								{{_('Main')}}
+							</span>
+						</a>
+					</li>
 
-			<!-- Menu -->
-			<nav>
-				<a href="{{ url_for('multilingual.index') }}"><i class="fa fa-home"></i>{{_('Main')}}<span class="custom-br"></span></a>
-				<a href="{{ url_for('multilingual.photo_view') }}"><i class="fa fa-camera"></i>{{_('Photos')}}<span class="custom-br"></span></a>
-				<a href="{{ url_for('multilingual.contact_view') }}"><i class="fa fa-user-secret"></i>{{_('Contacts')}}<span class="custom-br"></span></a>
-			</nav>
+					<li class="menu_li">
+						<a href="{{ url_for('multilingual.photo_view') }}">
+							<span>
+								<i class="fa fa-camera"></i>
+								{{_('Photos')}}
+							</span>
+							<span>
+								<i class="fa fa-camera"></i>
+								{{_('Photos')}}
+							</span>
+						</a>
+					</li>
 
-			<nav>
-				<a href="#"><i class="fa fa-globe"></i>{{_('Language:')}}</a>
-				<a href="{{ url_for(request.endpoint, lang_code='en') }}">{{_('English')}}<span class="custom-br"></span></a>
-				<a href="{{ url_for(request.endpoint, lang_code='uk') }}">{{_('Ukraine')}}<span class="custom-br"></span></a>
-			</nav>
+					<li class="menu_li">
+						<a href="{{ url_for('multilingual.contact_view') }}">
+							<span>
+								<i class="fa fa-user-secret"></i>
+								{{_('Contacts')}}
+							</span>
+							<span>
+								<i class="fa fa-user-secret"></i>
+								{{_('Contacts')}}
+							</span>
+						</a>
+					</li>
+
+					<li>
+						<a class="dropdown-toggle" href="#" title="Menu">
+							<span>
+								<i class="fa fa-globe"></i>
+								{{_('Language:')}}
+							</span>
+							<span>
+								<i class="fa fa-globe"></i>
+								{{_('Language:')}}
+							</span>
+						</a>
+						<ul class="dropdown">
+							<li>
+								<a href="{{ url_for(request.endpoint, lang_code='en') }}">{{_('English')}}</a>
+							</li>
+							<li>
+								<a href="{{ url_for(request.endpoint, lang_code='uk') }}">{{_('Ukraine')}}</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
 
 			<!-- Header -->
 			 {% block header %}
@@ -55,8 +105,9 @@
 		<script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
 		<script src="{{ url_for('static', filename='js/skel.min.js') }}"></script>
 		<script src="{{ url_for('static', filename='js/main.js') }}"></script>
-		<script src="{{ url_for('static', filename='js/jquery.poptrox.min.js') }}"></script>
-		<script src="{{ url_for('static', filename='js/banner.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/dropdown_menu.js') }}"></script>
+		{% block js_script %}
+		{% endblock %}
 	</body>
 
 </html>
