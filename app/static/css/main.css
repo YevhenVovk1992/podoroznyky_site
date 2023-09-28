@@ -796,8 +796,10 @@ ul.icons li:last-child {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 @media all and (max-width: 1460px) {
+
     #header {
         background-position: 0px -10px;
+        padding: 50px 0 60px 0;
     }
 
     .circles {
@@ -813,7 +815,6 @@ ul.icons li:last-child {
         padding: 10%;
     }
 }
-
 
 @media all and (min-width:960px) and (max-width: 1024px) {
 
@@ -839,7 +840,7 @@ ul.icons li:last-child {
     }
 
     #header_index .avatar img {
-        width: 390px;
+        width: 360px;
     }
 
     #header_index h1 {
@@ -885,6 +886,10 @@ ul.icons li:last-child {
         margin: 20px 20px;
     }
 
+    ul.dropdown {
+        margin: 6px 0px 0px -42px;
+    }
+
     .top_menu ul:nth-child(1) {
         display: block;
     }
@@ -912,10 +917,6 @@ ul.icons li:last-child {
         width: 100%;
     }
 
-    #header {
-        padding: 50px 0 60px 0;
-    }
-
     .thumbnails {
         margin: 4em -2em 0em -3em
     }
@@ -933,24 +934,22 @@ ul.icons li:last-child {
     }
 
     .thumbnails a h3 {
-    margin: 0px;
-    font-size: 76%;
+        margin: 0px;
+        font-size: 76%;
     }
 
     .banner_wrapper {
-        margin: -80px;
-        width: 133%;
+        width: 100%;
         background-color: #ffffff00;
     }
 
     #header .avatar-mini img {
-        width: 210px;
+        width: 180px;
     }
 
     #header {
-        margin-left: -55px;
-        width: 123%;
-        padding: 10px 0 60px 0;
+        width: 100%;
+        padding: 100px 0 0px 0;
         background-position: 0px 34px;
     }
 
@@ -974,6 +973,11 @@ ul.icons li:last-child {
     #wrapper {
         left: 0;
         width: 100%;
+        padding: 0px 0px;
+    }
+
+    .circles {
+        width: 55%;
     }
 
     .top_menu ul li {
@@ -986,12 +990,16 @@ ul.icons li:last-child {
 
     .top_menu {
         background-color: #00000091;
-        margin-left: -15%;
-        width: 130%;
+        width: 100%;
+        font-size: 80%;
+    }
+
+    ul.dropdown {
+        margin: 20px 0px 0px -40px;
     }
 
     #header_index {
-        padding: 160px 0 170px 0;
+        padding: 160px 0 0px 0;
     }
 
     #header_index .avatar img {
@@ -1017,12 +1025,8 @@ ul.icons li:last-child {
         width: 100%;
     }
 
-    #header {
-        padding: 50px 0 60px 0;
-    }
-
     .thumbnails {
-        margin: 4em -2em 0em -3em
+        margin: 4em 1em 0em 0em
     }
 
     .thumbnails > div {
@@ -1030,21 +1034,20 @@ ul.icons li:last-child {
     }
 
     .thumbnails a img {
-        height: 200px;
+        height: 130px;
     }
 
     .thumbnails a {
-        height: 270px;
+        height: 175px;
     }
 
     .thumbnails a h3 {
-        margin: 0px;
-        font-size: 76%;
+        margin: 4px;
+        font-size: 45%;
     }
 
     .banner_wrapper {
-        margin: -15%;
-        width: 130%;
+        width: 100%;
         background-color: #ffffff00;
     }
 
@@ -1057,9 +1060,8 @@ ul.icons li:last-child {
     }
 
     #header {
-        margin-left: -15%;
-        width: 130%;
-        padding: 30px 0 62px 0;
+        width: 100%;
+        padding: 90px 0 60px 0;
         background-size: 120%;
         background-position: 0px 50px;
     }
@@ -1069,8 +1071,8 @@ ul.icons li:last-child {
     }
 
     .contact_info {
-        width: 100%;
-        padding-left: 0%;
+        width: 95%;
+        padding-left: 5%;
     }
 
     .contact_info p {
@@ -1092,6 +1094,11 @@ ul.icons li:last-child {
     #wrapper {
         left: 0;
         width: 100%;
+        padding: 0px 0px;
+    }
+
+    .circles {
+        width: 38%;
     }
 
     .top_menu ul li {
@@ -1104,8 +1111,7 @@ ul.icons li:last-child {
 
     .top_menu {
         background-color: #00000091;
-        margin-left: -22%;
-        width: 145%;
+        width: 100%;
         font-size: 80%;
     }
 
@@ -1148,16 +1154,14 @@ ul.icons li:last-child {
         display: block;
     }
 
-    .slideshow-container {
+    .slideshow-container img {
         width: 100%;
-    }
-
-    #header {
-        padding: 50px 0 60px 0;
+        object-fit: cover;
+        height: 180px;
     }
 
     .thumbnails {
-        margin: 4em -2em 0em -3em
+        margin: 4em 1em 0em 0em
     }
 
     .thumbnails > div {
@@ -1178,8 +1182,7 @@ ul.icons li:last-child {
     }
 
     .banner_wrapper {
-        margin: -22%;
-        width: 146%;
+        width: 100%;
         background-color: #ffffff00;
     }
 
@@ -1188,7 +1191,7 @@ ul.icons li:last-child {
     }
 
     #main {
-        padding-top: 50px;
+        padding: 50px 0% 40px 0%;
     }
 
     #main h1 {
@@ -1196,8 +1199,7 @@ ul.icons li:last-child {
     }
 
     #header {
-        margin-left: -28%;
-        width: 155%;
+        width: 100%;
         padding: 110px 0 100px 0;
         background-size: 120%;
         background-position: 0px 85px;
@@ -1212,9 +1214,8 @@ ul.icons li:last-child {
     }
 
     .contact_info {
-        width: 135%;
-        margin-left: -18%;
-        padding-left: 0%;
+        width: 100%;
+        padding-left: 1%;
     }
 
     .contact_info p {
@@ -1232,9 +1233,14 @@ ul.icons li:last-child {
 }
 
 @media all and (min-width:0px) and (max-width: 320px) {
-#wrapper {
+
+    #wrapper {
         left: 0;
         width: 100%;
+    }
+
+    .circles {
+        width: 28%;
     }
 
     .top_menu ul li {
