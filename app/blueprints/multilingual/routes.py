@@ -44,7 +44,6 @@ def before_request():
         abort(404)
 
 
-@multilingual.route('/')
 @multilingual.route('/index/')
 def index():
     """
