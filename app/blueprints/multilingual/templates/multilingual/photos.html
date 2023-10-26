@@ -49,9 +49,16 @@
 
 			{% if content.paginator.next_page %}
 				<a href="?page={{ content.paginator.next_page }}">{{ content.paginator.next_page }}</a>
+
+				{% if content.paginator.next_page != content.paginator.total_pages %}
+					<a href="#">...</a>
+					<a href="?page={{ content.paginator.total_pages }}">{{ content.paginator.total_pages }}</a>
+				{% endif %}
+
 			{% endif %}
 
 			<a href="?page={{ content.paginator.total_pages }}">&raquo;</a>
+
 		</div>
 
 		<!-- Thumbnails -->
