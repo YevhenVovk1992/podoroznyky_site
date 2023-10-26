@@ -1,6 +1,6 @@
 # Podoroznyky web site
 ### Multilingual web site written in flask framework.
-Link - 
+Link - [podorozhnyky.com.ua](https://podorozhnyky.com.ua/)
 ___
 ![podoroznyky_screen_1](https://github.com/YevhenVovk1992/BenzinCheck/assets/104986485/215910f7-c781-4b59-98bf-c3ab298d98f5)
 ![podoroznyky_screen_2](https://github.com/YevhenVovk1992/BenzinCheck/assets/104986485/b5a6a9aa-3a15-44e1-8a37-98aa2bfc9651)
@@ -14,7 +14,7 @@ ___
 
 ___
 ## What we used?
-_Technologies used_: Flask, Flask-babel, html, css, js
+_Technologies used_: Flask, Flask-babel, Flask-Sitemap html, css, js
 
 ## What we do?
 It is a web application with frontend and backend. The main task of the application is informational.
@@ -22,6 +22,8 @@ The site contains information about the biker club, a photo from the event, a vi
 a map with the location of the headquarters.
 The web application has 2 languages - English and Ukrainian. Depending on the data that comes from the user's browser, 
 the server determines the user's preferred language.
+Create sitemap xml file. To get it, follow the link `http://hostname/sitemap.xml`
+We created our own paginator for the site and integrated into the view.
 
 
 ## How to start project?
@@ -51,3 +53,4 @@ Once this tedious work is over with, we can compile all of our translations with
 ## Sources
 1. [The Flask Mega-Tutorial Part XIII](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-xiii-i18n-and-l10n)
 2. [Flask, Create a Multilingual Web Application with Language Specific URL’s](https://medium.com/@nicolas_84494/flask-create-a-multilingual-web-application-with-language-specific-urls-5d994344f5fd)
+3. [How To Secure Nginx with Let's Encrypt on Ubuntu 22.04](https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-ubuntu-22-04)
